@@ -10,7 +10,7 @@ function Navbar() {
       alignItems: 'center',
       flexWrap: 'wrap'
     }}>
-      <h2 style={{ color: 'white', margin: '0' }}>YourPharmacy</h2>
+      <h2 style={{ color: 'white', margin: '0' }}>Instadrugs</h2>
 
       <div style={{ display: 'flex', gap: '20px' }}>
         <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>Home</Link>

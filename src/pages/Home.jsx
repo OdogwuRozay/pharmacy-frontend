@@ -23,7 +23,7 @@ function Home() {
   return (
     <div className="home-wrapper">
       
-      {/* Hero Section */}
+      {/* Hero Section AkA light blue under Navbar*/}
       <section className="hero">
         <div className="hero-content">
           <h1>Welcome to Your Trusted Online Pharmacy</h1>
