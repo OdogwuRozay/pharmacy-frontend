@@ -1,0 +1,142 @@
+/* Home.css */
+
+/* Reset default margins and set full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Overall page wrapper */
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  flex: 1;
+  width: 100%;
+  background-color: #d1f1f9; /* Light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+/* Hero Content */
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: black; /* Make the heading black */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: black; /* Make the paragraph black */
+}
+
+/* Shop Now Button */
+.shop-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #0a74da;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Featured Products Section */
+.featured-products {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  width: 100%;
+  color: black;
+}
+
+.featured-products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  width: 250px;
+  background-color: #f9f9f9; /* Light gray background */
+  color: black;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect on Product Card */
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Product Image inside Card */
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .shop-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+    max-width: 300px;
+  }
+}
